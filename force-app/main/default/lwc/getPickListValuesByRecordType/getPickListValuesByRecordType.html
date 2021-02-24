@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Get Picklist values By Record Type">
+        <div class="slds-m-around_medium">
+            <template if:true={Industry}>
+                <lightning-combobox options={Industry.values} name = "Industry" label = "Industry" value={pickListValue} onchange={handleChamge}>
+
+                </lightning-combobox>
+            </template>
+           
+        </div>
+        
+    </lightning-card>
+</template>

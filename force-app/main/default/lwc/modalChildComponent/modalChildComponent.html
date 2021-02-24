@@ -1,0 +1,17 @@
+<template>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <header>
+                <strong>
+                    {headerText}
+                </strong>
+            </header>
+            <p>
+                {bodyText}
+            </p>
+            <footer class="text-right">
+                <button class="btn danger" onclick={closeHandler}>Close </button>
+            </footer>
+        </div>
+    </div>
+</template>

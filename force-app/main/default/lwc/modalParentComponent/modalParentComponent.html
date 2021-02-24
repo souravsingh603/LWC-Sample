@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Sample Event" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={showHandler}>Open Modal</button>
+            <template if:true={showModal}>
+            <c-modal-child-component
+             header-text='Message!!'
+             body-text = 'This Modal is Child Component.Triggered on click of close button it will trigger an event to parent handler'
+             onclose={modalCloseHandler}
+            ></c-modal-child-component>
+        </template>
+        </div>
+    </lightning-card>
+</template>

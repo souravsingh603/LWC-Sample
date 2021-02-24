@@ -1,0 +1,27 @@
+<template>
+  <lightning-card
+    title="getRecordCreateDefault Demo"
+    icon-name="standard:account"
+  >
+    <table>
+      <thead>
+        <tr>
+          <template for:each={tableHeader} for:item="header">
+            <th key={header}>{header}</th>
+          </template>
+        </tr>
+      </thead>
+      <tbody>
+        <template for:each={tableBody} for:item="body">
+          <tr key={body.apiName}>
+            <td>{body.apiName}</td>
+            <td>{body.length}</td>
+            <td>{body.required}</td>
+            <td>{body.datatype}</td>
+            <td>{body.label}</td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+  </lightning-card>
+</template>

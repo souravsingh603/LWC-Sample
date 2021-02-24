@@ -1,0 +1,21 @@
+<template>
+    <div class="child2-section">
+        <p>Child Two</p>
+        <template for:each={accordionList} for:item="list">
+            <div key = {list.id}>
+                <button class={list.className}>
+                    {list.className}
+                </button>
+                <template if:true={list.selected}>
+                    <div class="panel">
+                        <p>
+                            qwertqwerqwertqwertwert
+                            qweqwerqwerqwerqwerqwerqwert
+                            qwewerwewertqwertqwertqwertyqwert
+                        </p>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>
